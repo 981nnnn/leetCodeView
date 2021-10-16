@@ -22,3 +22,21 @@
 <strong>输入: </strong>[1,1,1,3,3,4,3,2,4,2]
 <strong>输出:</strong> true</pre>
 <div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>排序</li></div></div><br><div><li>👍 510</li><li>👎 0</li></div>
+
+<div>
+    <p><STRONG>方法1：</STRONG></p>
+<pre>
+利用HashSet的特性：value不重复。向set中添加元素，如果已经存在就是返回false。如果不存在就会返回true；
+</pre>
+
+<p><STRONG>方法2：</STRONG></p>
+<pre>
+利用HashSet的特性：value不重复。向set中添加元素，如果已经存在就是返回false。如果不存在就会返回true；
+</pre>
+
+<p><STRONG>方法3：</STRONG></p>
+<pre>
+使用java的IntStream工具类
+</pre>
+
+</div>
