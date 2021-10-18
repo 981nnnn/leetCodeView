@@ -35,19 +35,19 @@ package leetcode.editor.cn;
 public class QingWaTiaoTaiJieWenTiLcof{
     public static void main(String[] args) {
         Solution solution = new QingWaTiaoTaiJieWenTiLcof().new Solution();
-        
+        solution.numWays(2);
     }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numWays(int n) {
-        if(n==0){
-            return 1;
+        int a = 1, b = 1, sum;
+        for(int i = 0; i < n; i++){
+            sum = (a + b) % 1000000007;
+            a = b;
+            b = sum;
         }
-        if (n==1) {
-            return 1;
-        }
-        return n % 1000000007;
+        return a;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
